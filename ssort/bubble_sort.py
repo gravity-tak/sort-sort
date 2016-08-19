@@ -15,6 +15,8 @@ def element_not_in_order(elm1, elm2, ascending=True):
 
 # bubble_sort1 did not consider that for every pass, the last one
 # is either the largest (ascending=True), or the least (ascending=False)
+# method: scan from left-to-right
+#         swap with my next cell if it is less than me
 def bubble_sort1(ARRAY, show_step=False, ascending=True):
     num_of_element = len(ARRAY)
     total_compared = 0
